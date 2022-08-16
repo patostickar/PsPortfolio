@@ -509,13 +509,6 @@ strong {
   }
 }
 
-// GOOGLE MAP
-.google-map {
-  iframe {
-    width: 100%;
-  }
-}
-
 // CONTACT FORM
 .contact-form {
   position: relative;
@@ -535,6 +528,8 @@ strong {
     }
   }
   .submit-btn {
+    width: 100%;
+    padding: 1em;
     background: $main-color;
     border-radius: 50px;
     color: $text-white;
@@ -547,15 +542,21 @@ strong {
     }
   }
 }
-
-.contact-info {
-  background: $button-color;
-  border-radius: 0 0 3px 3px;
-  position: relative;
-  bottom: 8px;
-  p,
-  a {
-    color: #f7f3f3;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .mailbox {
+    height: 300px;
+  }
+  .contact-info {
+    background: $button-color;
+    border-radius: 0 0 3px 3px;
+    position: relative;
+    p,
+    a {
+      color: #f7f3f3;
+    }
   }
 }
 
