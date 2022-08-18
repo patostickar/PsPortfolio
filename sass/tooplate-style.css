@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
 body {
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   padding-top: 70px;
 }
 
@@ -143,15 +143,15 @@ strong {
   right: 0;
   left: 0;
   -webkit-animation: BottomTotop 6s linear infinite 0s;
-          animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 6s linear infinite 0s;
 }
-.animated-item:nth-child(2n+2) {
+.animated-item:nth-child(2n + 2) {
   -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
-.animated-item:nth-child(3n+3) {
+.animated-item:nth-child(3n + 3) {
   -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 @-webkit-keyframes BottomTotop {
@@ -218,13 +218,13 @@ strong {
   will-change: transform;
   transition: transform 200ms linear;
 }
-.navbar[class*=-unpinned] {
+.navbar[class*='-unpinned'] {
   transform: translate(0, -150%);
 }
-.navbar[class*=-pinned] {
+.navbar[class*='-pinned'] {
   transform: translate(0, 0);
 }
-.navbar[class*=headroom--not-top] {
+.navbar[class*='headroom--not-top'] {
   background: #ffffff;
   border-bottom: 1px solid #f0f0f0;
   padding-top: 0;
@@ -283,14 +283,14 @@ strong {
 .navbar-toggler:focus {
   outline: none;
 }
-.navbar-toggler[aria-expanded=true] .navbar-toggler-icon:first-child {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:first-child {
   transform: rotate(45deg);
   top: 6px;
 }
-.navbar-toggler[aria-expanded=true] .navbar-toggler-icon:nth-child(2) {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:nth-child(2) {
   display: none;
 }
-.navbar-toggler[aria-expanded=true] .navbar-toggler-icon:last-child {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:last-child {
   transform: rotate(-45deg);
   bottom: 1px;
 }
@@ -320,15 +320,15 @@ strong {
   right: 6px;
 }
 .color-mode-icon:after {
-  font-family: "unicons";
-  content: "\ea9f";
+  font-family: 'unicons';
+  content: '\ea9f';
   font-size: 30px;
   font-weight: 300;
   font-style: normal;
 }
 .color-mode-icon.active:after {
-  font-family: "unicons";
-  content: "\eb65";
+  font-family: 'unicons';
+  content: '\eb65';
   font-size: 30px;
   color: #ffffff;
 }
@@ -342,7 +342,7 @@ strong {
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #ffc200;
 }
-.dark-mode .navbar[class*=headroom--not-top] {
+.dark-mode .navbar[class*='headroom--not-top'] {
   background: #0c0c0d;
   border-bottom: 1px solid #1f1f1f;
 }
@@ -375,7 +375,7 @@ strong {
   height: 0;
 }
 .timeline-wrapper:before {
-  content: "";
+  content: '';
   background: #474559;
   width: 3px;
   height: 100%;
@@ -426,27 +426,27 @@ strong {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  font-family: "unicons";
+  font-family: 'unicons';
   font-size: 100px;
   line-height: normal;
 }
 .owl-carousel .owl-nav .owl-prev:before {
-  content: "\e833";
+  content: '\e833';
   left: -45px;
 }
 .owl-carousel .owl-nav .owl-next:before {
-  content: "\e836";
+  content: '\e836';
   right: -45px;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
+.owl-theme .owl-nav [class*='owl-'] {
   background: none;
   border-radius: 0;
   margin: 0;
   padding: 0;
   font-size: inherit;
 }
-.owl-theme .owl-nav [class*=owl-]:hover {
+.owl-theme .owl-nav [class*='owl-']:hover {
   color: #ffc200;
 }
 .owl-theme .owl-dots .owl-dot {
@@ -456,7 +456,8 @@ strong {
   width: 8px;
   height: 8px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #5b5b5b;
 }
 
@@ -474,7 +475,8 @@ strong {
 .contact-form .form-control:not(textarea) {
   height: 48px;
 }
-.contact-form .form-control:hover, .contact-form .form-control:focus {
+.contact-form .form-control:hover,
+.contact-form .form-control:focus {
   border-color: #ffc200;
 }
 .contact-form .submit-btn {
@@ -528,7 +530,7 @@ strong {
 }
 @media (max-width: 991px) {
   .full-screen {
-    padding-bottom: 4rem;
+    padding: 4rem 0;
   }
   .color-mode {
     display: none;
@@ -537,7 +539,7 @@ strong {
     margin-top: 4em;
   }
   .mobile-mt-2,
-.contact-form {
+  .contact-form {
     margin-top: 2em;
   }
   .contact-info {
@@ -619,4 +621,4 @@ strong {
     display: inline-block;
     vertical-align: top;
   }
-}/*# sourceMappingURL=tooplate-style.css.map */
+} /*# sourceMappingURL=tooplate-style.css.map */
