@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
+// @import '../css/line.css';
+@import '../css/unicons.css';
+@import '~bootstrap/scss/bootstrap';
+$owl-image-path: '~owl.carousel/src/img/';
+@import '~owl.carousel/src/scss/owl.carousel';
+@import '~owl.carousel/src/scss/owl.theme.default';
 
 // VARIABLES
 $font-base: 'Maven Pro', sans-serif;
@@ -25,6 +31,10 @@ $link-font-size: 1rem;
 
 @mixin transition-effect {
   transition: all 0.4s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -213,6 +223,17 @@ strong {
 }
 
 // MENU
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
 .navbar {
   position: fixed;
   top: 0;
