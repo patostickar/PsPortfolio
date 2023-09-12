@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init('lpOntDQ5WI-TQQtIM');
+  emailjs.init('ljXqQ96bYgHvyAgYA');
 })();
 (function () {
   'use strict';
@@ -23,7 +23,7 @@
             } else {
               this.contact_number.value = (Math.random() * 100000) | 0;
 
-              emailjs.sendForm('service_9rz4q2w', 'template_g1qb1zn', this).then(
+              emailjs.sendForm('service_ec3t0wb', 'template_g1qb1zn', this).then(
                 function () {
                   form.classList.remove('was-validated');
 
@@ -36,6 +36,7 @@
                 },
 
                 function (error) {
+                  console.log(error)
                   alert.textContent = error;
                   alert.classList.add('alert-danger');
                   $('.alert').addClass('show');
